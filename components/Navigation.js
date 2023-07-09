@@ -1,24 +1,23 @@
-import { Inter } from "next/font/google";
-import Image from "next/image";
-import Link from "next/link";
-import About from "./navigation/About";
-import Inversores from "./navigation/Investors";
-import { Fragment, useState } from "react";
-import { ImMenu } from "react-icons/im";
-import Capital from "./navigation/Capital";
+import { Inter } from "next/font/google"
+import { ConnectButton } from "@rainbow-me/rainbowkit"
 
-const inter = Inter({ subsets: ["latin"] });
+import Image from "next/image"
+import Link from "next/link"
+import About from "./navigation/About"
+import Inversores from "./navigation/Investors"
+import { Fragment, useState } from "react"
+import { ImMenu } from "react-icons/im"
+import Capital from "./navigation/Capital"
 
 export default function Navigation() {
-  const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(false)
 
   const LINKS = (
     <Fragment>
-      <Inversores />
-      <About />
+      <ConnectButton />
       <Capital />
     </Fragment>
-  );
+  )
 
   return (
     <Fragment>
@@ -32,7 +31,9 @@ export default function Navigation() {
             className=""
           />
         </Link>
-        <div className="items-center justify-end hidden lg:flex">{LINKS}</div>
+        <div className="items-center justify-end hidden lg:flex whitespace-nowrap gap-4">
+          {LINKS}
+        </div>
         <button
           type="button"
           className="lg:hidden"
@@ -49,5 +50,5 @@ export default function Navigation() {
         {LINKS}
       </section>
     </Fragment>
-  );
+  )
 }
