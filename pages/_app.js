@@ -1,5 +1,6 @@
 import "../styles/globals.css";
 import localFont from "next/font/local";
+
 import { Inter } from "@next/font/google";
 
 const nextFont = Inter({ subsets: [] });

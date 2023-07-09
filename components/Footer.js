@@ -22,7 +22,7 @@ export default function Footer() {
               <div className="max-w-sm mx-1 ">
                 <div className="justify-between sm:flex sm:text-center">
                   <Link className="w-full pb-4 md:w-1/3 lg:w-1/4" href="/o">
-                    <Image src="/devow.jpg" alt="" width={75} height={75} />
+                    <Image src="/devowii.png" alt="" width={75} height={75} />
                   </Link>{" "}
                 </div>
                 <div className="flex flex-row gap-4 py-2 mt-16 text-sm text-gray-700">
@@ -31,12 +31,7 @@ export default function Footer() {
                   </Link>
                   hello@devow.xyz
                 </div>
-                <div className="flex flex-row gap-4 text-sm text-gray-700 text-start">
-                  <Link href="mailto:hello@devow.xyz">
-                    <FaLocationArrow size={25} />
-                  </Link>
-                  Madrid, España
-                </div>
+
                 <div className="max-w-xl mx-1 mt-8">
                   <form action="#" className="sm:flex sm:gap-4">
                     <div className="sm:flex-1"></div>
